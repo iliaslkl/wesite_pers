@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
+import { email } from '@config';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
@@ -60,28 +61,30 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const two = <h2 className="big-heading">Ilias Laoukili.</h2>;
+  const three = (
+    <h3 className="big-heading">AI &amp; Cybersecurity engineering student.</h3>
+  );
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
-        .
+        I’m a Master of Engineering student at ESIEE Paris specializing in artificial intelligence,
+        computer vision, and cybersecurity applications. My curriculum combines machine learning
+        research with hands-on security practice.
+      </p>
+      <p>
+        I’m currently seeking a 4-month internship between May and August 2026 to contribute to
+        applied AI and cybersecurity projects and keep growing through real-world impact.
       </p>
     </>
   );
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
+      href={`mailto:${email}`}
       target="_blank"
       rel="noreferrer">
-      Check out my course!
+      Let’s connect
     </a>
   );
 

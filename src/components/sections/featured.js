@@ -356,7 +356,8 @@ const Featured = () => {
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover, cta } = frontmatter;
-            const image = getImage(cover);
+            const image = cover ? getImage(cover) : null;
+            const titleContent = external ? <a href={external}>{title}</a> : <span>{title}</span>;
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
@@ -365,7 +366,7 @@ const Featured = () => {
                     <p className="project-overline">Featured Project</p>
 
                     <h3 className="project-title">
-                      <a href={external}>{title}</a>
+                      {titleContent}
                     </h3>
 
                     <div
@@ -373,7 +374,7 @@ const Featured = () => {
                       dangerouslySetInnerHTML={{ __html: html }}
                     />
 
-                    {tech.length && (
+                    {tech?.length > 0 && (
                       <ul className="project-tech-list">
                         {tech.map((tech, i) => (
                           <li key={i}>{tech}</li>
@@ -401,11 +402,13 @@ const Featured = () => {
                   </div>
                 </div>
 
-                <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
-                    <GatsbyImage image={image} alt={title} className="img" />
-                  </a>
-                </div>
+                {image && (
+                  <div className="project-image">
+                    <a href={external ? external : github ? github : '#'}>
+                      <GatsbyImage image={image} alt={title} className="img" />
+                    </a>
+                  </div>
+                )}
               </StyledProject>
             );
           })}
