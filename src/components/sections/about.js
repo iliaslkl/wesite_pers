@@ -46,6 +46,31 @@ const StyledText = styled.div`
     }
   }
 `;
+const StyledProjectHighlight = styled.div`
+  margin-top: 30px;
+  padding: 24px;
+  border-radius: var(--border-radius);
+  background: rgba(100, 255, 218, 0.08);
+  border: 1px solid rgba(100, 255, 218, 0.4);
+
+  h3 {
+    margin: 0 0 12px;
+    font-size: clamp(18px, 2.6vw, 24px);
+    color: var(--green);
+  }
+
+  p {
+    margin: 0 0 16px;
+  }
+
+  .download-button {
+    ${({ theme }) => theme.mixins.smallButton};
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+`;
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -168,6 +193,25 @@ const About = () => {
               Outside of school and work, I volunteer with the French Red Cross to assist community
               outreach efforts that support hundreds of families.
             </p>
+
+            <StyledProjectHighlight>
+              <h3>Tremplin Recherche Project</h3>
+              <p>
+                I’m currently conducting a Tremplin Recherche project at ESIEE Paris on graph
+                sparsification for graph neural networks, under the supervision of Maximilien
+                Dreveton within the Probability &amp; Statistics team at LAMA. The study compares
+                sparsification strategies to balance predictive performance and efficiency across
+                benchmark GNN models and datasets.
+              </p>
+              <a
+                className="download-button"
+                href="/tremplin-recherche-gnn.pdf"
+                target="_blank"
+                rel="noreferrer"
+                download>
+                Download the project overview (PDF)
+              </a>
+            </StyledProjectHighlight>
 
             <p>Here are a few technologies and topics I’ve been working with recently:</p>
           </div>

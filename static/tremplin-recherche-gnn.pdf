@@ -1,0 +1,130 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >> endobj
+4 0 obj << /Length 4378 >> stream
+BT
+/F1 11 Tf
+72 780 Td
+0 -10 Td
+(Graph Sparsification for Graph Neural Networks) Tj
+0 -14 Td
+(Projet TREMPLIN RECHERCHE 2025/2026) Tj
+0 -14 Td
+(Tuteur : Maximilien Dreveton \(maximilien.dreveton@univ-eiffel.fr\)) Tj
+0 -14 Td
+(Équipe Probabilité & Statistiques du Laboratoire d’analyse et de mathématiques appliquées) Tj
+0 -14 Td
+(\(LAMA\) https://lama-umr8050.fr) Tj
+0 -14 Td
+(Filière visée : Datascience et intelligence artificielle, et éventuellement Informatique ou) Tj
+0 -14 Td
+(Artificial Intelligence and Cybersecurity.) Tj
+0 -32 Td
+(1 Présentation générale) Tj
+0 -14 Td
+(Les réseaux neuronaux graphiques \(Graph Neural Networks; GNN\) sont utilisés pour traiter) Tj
+0 -14 Td
+(des ensembles de données à grande échelle dans des domaines tels que les réseaux sociaux,) Tj
+0 -14 Td
+(l’analyse des citations et la biologie [1]. Cependant, leur coût de calcul augmente à minima) Tj
+0 -14 Td
+(proportionnellement au nombre d’arêtes dans le graphe, ce qui crée des limites en termes de) Tj
+0 -14 Td
+(scalabilité.) Tj
+0 -14 Td
+(La sparsification des graphes, c’est-à-dire la réduction du nombre d’arêtes tout en essayant de) Tj
+0 -14 Td
+(préserver les propriétés essentielles du graphe, offre une voie prometteuse pour améliorer la) Tj
+0 -14 Td
+(scalabilité des GNN. Bien qu’il existe de nombreux schémas de sparsification \(échantillonnage) Tj
+0 -14 Td
+(aléatoire, sparsification spectrale [2], sparsification métrique [3], etc\), leur effet sur les) Tj
+0 -14 Td
+(performances des GNN reste une question ouverte.) Tj
+0 -32 Td
+(2 Objectifs) Tj
+0 -14 Td
+(L’objectif de ce projet est de mener une étude comparative des méthodes de sparsification des) Tj
+0 -14 Td
+(graphes pour les GNN, en mettant l’accent sur le compromis entre performances et efficacité.) Tj
+0 -14 Td
+(Plus précisément :) Tj
+0 -14 Td
+(• Mise en œuvre de différentes méthodes de sparsification des graphes.) Tj
+0 -14 Td
+(• Évaluer leur impact sur le temps d’entraînement, l’utilisation de la mémoire et la précision) Tj
+0 -14 Td
+(prédictive des GNN.) Tj
+0 -14 Td
+(• Identifier les méthodes de sparsification qui offrent le meilleur équilibre entre rapidité) Tj
+0 -14 Td
+(d’entraînement et performances.) Tj
+0 -14 Td
+(Les questions de recherche sont les suivantes:) Tj
+0 -14 Td
+(• Quelles stratégies de sparsification sont les plus efficaces pour préserver les performances) Tj
+0 -14 Td
+(des GNN ?) Tj
+0 -14 Td
+(• Comment la sparsification influence-t-elle l’efficacité de l’entraînement \(temps d’exécution,) Tj
+0 -14 Td
+(performance prédictive\) ?) Tj
+0 -14 Td
+(• Différents datasets réagissent-ils différemment à la sparsification ?) Tj
+0 -14 Td
+(Pour répondre à ces questions, l’étudiant analysera l’impact de différentes techniques de) Tj
+0 -14 Td
+(sparsification sur les performances de modèles de GNN de référence \(tels que GCN, GraphSAGE) Tj
+0 -14 Td
+(ou GAT, généralement implémentés avec PyTorch Geometric ou Deep Graph Library\), en) Tj
+0 -14 Td
+(s’appuyant sur des jeux de données de référence \(Cora, Citeseer, PubMed, OGB\).) Tj
+0 -32 Td
+(3 Prérequis) Tj
+0 -14 Td
+(Une bonne maîtrise de Python et des bibliothèques scientifiques courantes est indispensable.) Tj
+0 -14 Td
+(Une première expérience avec des frameworks de deep learning \(tels que PyTorch\) et/ou des) Tj
+0 -14 Td
+(bibliothèques de graphes \(comme igraph\) est apprécié, mais n’est pas obligatoire.) Tj
+0 -14 Td
+(Les deux tutoriels suivants sont une excellente introduction aux GNN :) Tj
+0 -14 Td
+(• https://distill.pub/2021/understanding-gnns/) Tj
+0 -14 Td
+(• https://distill.pub/2021/gnn-intro/) Tj
+0 -32 Td
+(Bibliography) Tj
+0 -14 Td
+([1] T. N. Kipf and M. Welling, “Semi-Supervised Classification with Graph Convolutional) Tj
+0 -14 Td
+(Networks,” in International Conference on Learning Representations, 2017.) Tj
+0 -14 Td
+([2] D. A. Spielman and N. Srivastava, “Graph sparsification by effective resistances,” in) Tj
+0 -14 Td
+(Proceedings of the fortieth annual ACM symposium on Theory of computing, 2008, pp.) Tj
+0 -14 Td
+(563–568.) Tj
+0 -14 Td
+([3] M. Dreveton, C. Chucri, M. Grossglauser, and P. Thiran, “Why the metric backbone) Tj
+0 -14 Td
+(preserves community structure,” Advances in Neural Information Processing Systems, vol.) Tj
+0 -14 Td
+(37, pp. 37439–37472, 2024.) Tj
+ET
+endstream endobj
+5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000004521 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+4591
+%%EOF
